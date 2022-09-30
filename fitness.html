@@ -21,6 +21,7 @@
            /* border: 1px solid red; */
            height: 60px;
            margin-left: 0px; 
+           background-color:white;
         }
         #navbar>div:nth-child(1)>img{
             width:120px;
@@ -53,6 +54,10 @@
         font-family:"Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         color: black;
         }
+        #navbar>div:nth-child(2)>a:hover{
+        border-bottom: 3px solid #4296ce ;
+        padding-bottom: 20px;
+        }
         #navbar>div:nth-child(2)>a:nth-child(7){
           color:#4296ce;  
         }
@@ -66,6 +71,12 @@
             width:120px ;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             
+        }
+        #navbar>div:nth-child(3):hover{
+            border-bottom: 3px solid #4296ce ;
+        padding-bottom: 20px;
+        cursor: pointer;   
+
         }
         #navbar>div:nth-child(3)>p{
             font-size: 10px;
@@ -91,6 +102,11 @@
          margin-top: 24px;
          margin-left: 10px;
          color: black;
+        }
+        #navbar>div:nth-child(4)>a:hover{
+            border-bottom: 3px solid #4296ce ;
+        padding-bottom: 15px;
+        cursor: pointer;  
         }
         .top{
             display: flex;
@@ -417,6 +433,46 @@
         margin-top:30px ;
         margin-left: 25px;
        }
+       #footer{
+        display: flex;
+       }
+       #footer>div:nth-child(1){
+        background-color:#212432;
+        width: 35%;
+        height: 400px;
+       }
+       #footer>div:nth-child(1)>img{
+        width: 150px;
+        margin: 40px;
+       }
+       #footer>div:nth-child(2){
+        background-color:#212432 ;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(8,1fr);
+        color: white;
+       font-size: 12px;
+       gap: 10px;
+        padding-top: 40px;
+       }
+       #footer>div:nth-child(2)>a{
+        font-family:"Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        color: white;
+        text-decoration: none;
+       
+       }
+       #footer>div:nth-child(2)>a>hr{
+        color: white;
+       }
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
     </style>
 </head>
 <body>
@@ -563,10 +619,62 @@
 
              <div class="blank">
                 <a href="">View All Programs</a>
-
-             </div>
+            </div>
+            
+        </div>
+        <div id="footer">
+            <div>
+              <img src="https://premium-storefronts.s3.amazonaws.com/storefronts/fitnessblender/assets/logo.png" alt="">
+            </div>
+            <div>
+                <a href="">WORKOUTS</a>
+                <a href="">WORKOUT VIDEOS</a>
+                <a href="">CUSTOM WORKOUTS</a>
+                <a href="">PROGRAMS</a>
+                <a href="">WORKOUT PROGRAMS</a>
+                <a href="">MEAL PLANS</a>
+                <a href="">PILOT PROGRAMS</a>
+                <a href="">ROUTINES</a>
+                <a href="">HEALTHY LIVING</a>
+                <a href="">FITNESS</a>
+                <a href="">HEALTH</a>
+                <a href="">NUTRITION</a>
+                <a href="">HEALTHY RECIPES</a>
+                <a href="">EXPERTS</a>
+                <a href="">ABOUT</a>
+                <a href="">CAREERS</a>
+                <a href="">TUTORIALS</a>
+                <a href="">OUR TEAM</a>
+                <a href="">B2B OPTIONS</a>
+                <a href="">MEMBERSHIP</a>
+                <a href="">FB PLUS</a>
+                <a href="">COMMUNITY</a>
+                <a href="">BLOG</a>
+                <a href="">CONTACT US</a>
+                <a href="">FAQ</a>
+                <a href="">STORE</a>
+                <hr>
+                
+                
+            
+            </div>
         </div>
 
     </div> 
 </body>
 </html>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
