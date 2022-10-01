@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+    ></script>
+
+    <style>
+        #header
+        {
+          height: auto;
+          position: relative;
+
+        }
+        #header>img{
+         width:100%;
+         height: 350px;
+         display: block;
+
+        }
+        #header .text{
+            position: absolute;
+            font-size: 15px;
+            top: 40px;
+            left: 20px;
+            color: white;
+        }
+        #top1{
+            height: 425px;
+            background-color: #e3ebee;
+           border:1px solid red;
+        }
+        #top1 .text{
+            display: flex;
+        }
+        #top1 .text>h1{
+            font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            padding-left: 50px;
+            font-weight:25;
+            font-size: 25px;
+            padding-top: 50px;
+            padding-bottom: 20px;
+
+        }
+        #top1 .text>p{
+            padding-left: 300px;
+            padding-top: 60px;
+            color: #0000ff;
+        }
+        #top1 .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            border: 1px solid black;
+            width: 90%;
+            margin: auto;
+            height: 240px;
+            font-size: 13px;
+            
+            
+        }
+        #top1 .grid >div{
+            border: 1px solid green;
+            background-color: white;
+            line-height: 15px;
+            font-size: 12px;
+            /* text-align: center; */
+        }
+        #top1 .grid >div>img{
+            width: 100%;
+            border-bottom: 1px solid rgb(241, 234, 234);
+        }
+        #top1 .grid >div>button{
+           font-size: 10px;
+           border: none;
+           color: aliceblue;
+           border-radius: 10px;
+           background-color: rgb(91, 212, 91);
+           font-weight: bold;
+            margin-left: 80px;
+            margin-top: -100px;
+        }
+        #top1 .grid >div>p~p{
+            color: rgba(0, 157, 255, 0.943);
+        }
+        #footer{
+        display: flex;
+       }
+       #footer>div:nth-child(1){
+        background-color:#212432;
+        width: 35%;
+        height: 400px;
+       }
+       #footer>div:nth-child(1)>img{
+        width: 150px;
+        margin: 40px;
+       }
+       #footer>div:nth-child(2){
+        background-color:#212432 ;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(8,1fr);
+        color: white;
+       font-size: 12px;
+       gap: 10px;
+        padding-top: 40px;
+       }
+       #footer>div:nth-child(2)>a{
+        font-family:"Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        color: white;
+        text-decoration: none;
+       
+       }
+       #footer>div:nth-child(2)>a>hr{
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://d18zdz9g6n5za7.cloudfront.net/workouts_programs/masthead-workouts-xs.jpg" alt="">
+         <div class="text">
+            <h4>ONLINE WORKOUT VIDEOS</h4>
+            <h1>Find Your Fitness.
+                <br> Something for Everyone.</h1>
+                <p>A huge selection of workout videos and programs to help you look and feel your best.</p>
+
+         </div>
+    </div>
+    <div id="top1">
+        <div class="text">
+            <h1>Newest Free Workout Videos</h1>
+            <p>View All Free Workouts</p>
+        </div>
+
+        <div class="grid">
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+               
+                <p>29 Min • Total Body • Energizing</p>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1111-lower-body-strength-with-hiit-finisher-838a.jpg" alt="">
+                <button>FREE</button>
+                <h3>Lower Body Strength With HIIT Finisher</h3>
+                <p>Weights With Cardio EMOMs</p>
+                <p>28 Min • Lower Body • Spicy</p>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1118-low-impact-cardio-and-core-a87d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div>
+                 <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1101-cardio-strength-and-core-combo-9e73.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="top1">
+        <div class="text">
+            <h1>Newest Free Workout Videos</h1>
+            <p>View All Free Workouts</p>
+        </div>
+
+        <div class="grid">
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+               
+                <p>29 Min .Total Body .Energizing</p>
+                <i class="fa-light fa-ellipsis-stroke-vertical"></i>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div>
+                 <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="top1">
+        <div class="text">
+            <h1>Newest Free Workout Videos</h1>
+            <p>View All Free Workouts</p>
+        </div>
+
+        <div class="grid">
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+               
+                <p>29 Min .Total Body .Energizing</p>
+                <i class="fa-light fa-ellipsis-stroke-vertical"></i>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div>
+                 <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="top1">
+        <div class="text">
+            <h1>Newest Free Workout Videos</h1>
+            <p>View All Free Workouts</p>
+        </div>
+
+        <div class="grid">
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+               
+                <p>29 Min .Total Body .Energizing</p>
+                <i class="fa-light fa-ellipsis-stroke-vertical"></i>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div>
+                 <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="top1">
+        <div class="text">
+            <h1>Newest Free Workout Videos</h1>
+            <p>View All Free Workouts</p>
+        </div>
+
+        <div class="grid">
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+               
+                <p>29 Min .Total Body .Energizing</p>
+                <i class="fa-light fa-ellipsis-stroke-vertical"></i>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div> 
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+            </div>
+            <div>
+                 <img src="https://d18zdz9g6n5za7.cloudfront.net/video/640/640-1082-quick-total-body-power-yoga-a26d.jpg" alt="">
+                <button>FREE</button>
+                <h3>Quick Total Power yoga</h3>
+                <p>Beginner-Friendly Flow to Build Strength and Release Tension</p>
+                <p>29 Min .Total Body .Energizing</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div>
+          <img src="https://premium-storefronts.s3.amazonaws.com/storefronts/fitnessblender/assets/logo.png" alt="">
+        </div>
+        <div>
+            <a href="">WORKOUTS</a>
+            <a href="">WORKOUT VIDEOS</a>
+            <a href="">CUSTOM WORKOUTS</a>
+            <a href="">PROGRAMS</a>
+            <a href="">WORKOUT PROGRAMS</a>
+            <a href="">MEAL PLANS</a>
+            <a href="">PILOT PROGRAMS</a>
+            <a href="">ROUTINES</a>
+            <a href="">HEALTHY LIVING</a>
+            <a href="">FITNESS</a>
+            <a href="">HEALTH</a>
+            <a href="">NUTRITION</a>
+            <a href="">HEALTHY RECIPES</a>
+            <a href="">EXPERTS</a>
+            <a href="">ABOUT</a>
+            <a href="">CAREERS</a>
+            <a href="">TUTORIALS</a>
+            <a href="">OUR TEAM</a>
+            <a href="">B2B OPTIONS</a>
+            <a href="">MEMBERSHIP</a>
+            <a href="">FB PLUS</a>
+            <a href="">COMMUNITY</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT US</a>
+            <a href="">FAQ</a>
+            <a href="">STORE</a>
+            
+            
+            
+        
+        </div>
+    </div>
+</body>
+</html>
